@@ -2,13 +2,39 @@
   <div class="container-fluid">
 
     <div>
-
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-dark">
+        <button class="btn btn-outline-secondary btn-md bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+          aria-controls="sidebar">
+          <span class="text-dark">☰</span>
+        </button>
+      </nav>
+      
+      <!-- Sidebar (Offcanvas) -->
+      <div class="offcanvas offcanvas-start bg-light text-black" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link text-black" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" routerLink="/about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
 
-    <a class="navbar-brand">NoComply</a>
+    <a href="/" class="navbar-brand"><strong>NoComply</strong></a>
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <button class="btn btn-outline-success " type="submit">Search</button>
     </form>
   </div>
 </nav>
